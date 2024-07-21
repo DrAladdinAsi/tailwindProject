@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tailwind Portfolio</title>
+</head>
+<body class="font-nunito "  >
+    <!--intro section-->
+    <div id='' class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden dark:bg-gradient-to-t dark:from-slate-800">
+      <!--nav bar-->
+      <nav class="bg-white w-full h-9 fixed top-0 py-2 px-2 sm:px-0 z-10 dark:bg-slate-700">
+        <div class="container mx-auto flex justify-between ">
+             <!--logo-->
+            <div class="flex gap-1 text-center ">
+               <img class="h-7 w-7" src="./img/logo.png" alt="the logo image">
+               <span class="text-l dark:text-slate-200">PortLand.</span>
+            </div>
+
+            <ul class="hidden md:flex space-x-10 justify-center uppercase font-thin dark:text-slate-200 ">
+                <li class="hover:text-gray-900 hover:font-medium cursor-pointer "><a href="#">homepage</a></li>
+                <li class="hover:text-gray-900 hover:font-medium cursor-pointer"><a href="#about">about me</a></li>
+                <li class="hover:text-gray-900 hover:font-medium cursor-pointer"><a href="#services">services</a></li>
+                <li class="hover:text-gray-900 hover:font-medium cursor-pointer"><a href="#portfolio">portfolio</a></li>
+                <li class="hover:text-gray-900 hover:font-medium cursor-pointer"><a href="#contact">contact</a></li>
+            </ul>
+
+            <!--the theme mode-->
+            <img  class="hidden md:block h-5 w-5 cursor-pointer moon" src="./img/moon.png" alt="the image for the theme mode">
+            
+            <!--the humberger menu-->
+            <div id="humberger" class="md:hidden flex flex-col gap-1 z-10  cursor-pointer">
+               <div class="bg-black w-5 h-0.5 rounded-sm menu_line dark:bg-slate-200"></div>
+               <div class="bg-black w-5 h-0.5 rounded-sm menu_line dark:bg-slate-200" ></div>
+               <div class="bg-black w-5 h-0.5 rounded-sm menu_line dark:bg-slate-200"></div>
+
+            </div>
+
+            <!--the menu for the humberger-->
+            <ul id="humberger_menu" class="hidden flex-col md:hidden gap-3 justify-center  text-center uppercase font-thin  bg-blue-950 text-white absolute top-0 right-0 h-60 w-screen p-3 rounded-bl-3xl">
+                <li class="hover:font-medium cursor-pointer hLink"><a href="#">homepage</a></li>
+                <li class="hover:font-medium cursor-pointer hLink"><a href="#about">about me</a></li>
+                <li class="hover:font-medium cursor-pointer hLink"><a href="#services">services</a></li>
+                <li class="hover:font-medium cursor-pointer hLink"><a href="#portfolio">portfolio</a></li>
+                <li class="hover:font-medium cursor-pointer hLink"><a href="#contact">contact</a></li>
+            </ul>
+
+
+        </div>
+
+      </nav>
+
+      <!--content-->
+      <img class="absolute bottom-0 right-0 w-96 h-72 md:left-0 md:mx-auto lg:left-0 lg:mx-auto lg:h-big lg:w-big " src="./img/man.png" alt="a guy with a smile">
+      
+      <!--circle-->
+      <div class="hidden lg:block w-big h-big bg-indigo-800 rounded-full absolute right-0 left-0 mx-auto -bottom-1/4 -z-10 "></div>
+
+      <!--animated part of the intro section-->
+      <div class="absolute top-1/4 left-10 sm:left-20 md:left-24 lg:left-32 ">
+        <span class="text-gray-600 text-xl font-bold  sm:text-2xl md:text-3xl lg:text-4xl dark:text-slate-50">Freelancer</span>
+        <p id="text" class="text-red-600 text-xl font-bold sm:text-2xl md:text-3xl  lg:text-4xl">Develover</p>
+      </div>
+     
+     <!--about me part of the intro section-->
+     <div class="hidden px-3 py-3 lg:flex flex-col gap-4 w-80 h-fit bg-white absolute top-32 right-20 rounded-xl rounded-bl-none ">
+        <span class="text-2xl text-indigo-600">Hi,</span>
+        <p class="text-gray-500">I am John Wick with experience more than 10 years in fighting . Lorem ipsum dolor sit amet, consectetur adipisicing elit. deleniti
+              corrupti quos quia laboriosam neque laudant   </p>
+        <span class="h-fit w-fit px-2 py-2 bg-indigo-600 cursor-pointer text-white">Hire me</span>
+     </div>
+
+    </div>
+
+
+    <!--about me section-->
+    <div id='about'  class="dark:bg-slate-800">
+      <!--inner div for the about me section-->
+      <div class="container mx-auto  flex flex-col-reverse  lg:flex-row gap-8 lg:gap-6 h-full  py-7 text-center dark:bg-slate-800">
+         <!--left-->
+         <div class="relative  md:w-1/2  h-screen  lg:block w-full ">
+            <img class="absolute top-0 left-0  hidden lg:block -z-10 h-1/4" src="./img/dots.png" alt="the dots image">
+            <div class="rounded-full overflow-hidden hidden lg:block  lg:h-2/3 lg:w-1/2 w-1/4 h-1/2">
+              <img class="object-cover w-full h-full" src="./img/portrait.png" alt="an image for a guy wiht glasses">
+            </div>
+             
+            <!--small screen image show-->
+            <div class="md:hidden flex flex-row gap-2  mt-4 px-3">
+              <div class=" overflow-hidden w-1/2 h-1/2 ">
+                <img class="rounded-3xl object-cover w-3/4 h-1/2" src="./img/portrait.png" alt="an image for a guy wiht glasses">
+              </div>
+
+              <p class="text-base text-gray-500 px-2 my-auto dark:text-slate-300">The best Designer you can hire to do the job to you . Trust us we are the best.</p>
+            </div>
+         </div>
+
+         <!--right-->
+         <div class="flex flex-col lg:align-middle h-screen w-full lg:w-1/2 lg:gap-4 md:gap-8 gap-3 lg:h-screen ">
+          <span class="text-lg md:text-2xl text-indigo-500 uppercase">about me</span>
+
+          <span class="text-base md:text-xl dark:text-slate-200">Better Design</span>
+          <span class="text-base md:text-xl dark:text-slate-200">Better Experience</span>
+          
+          <p class="text-gray-500 md:w-3/4 text-center mx-auto px-2 mt-1 md:mt-0 text-sm dark:text-slate-300">I desgin and built digtial products using Html , Css , Js , Rect for the frontend and for the backend I use Django</p>
+          <!--for the banner about the skills-->
+          <div class="flex flex-col gap-2 mt-2 md:mt-0">
+            <span class="text-base text-gray-500 dark:text-slate-300">Html Css JavaScript</span>
+          <!--parent-->
+          <div class="lg:w-full w-3/4 mx-auto h-1 bg-gray-400 rounded-md">
+             <!--son of the banner-->
+             <div class="lg:w-full w-full h-1 bg-indigo-500 rounded-md"></div>
+          </div>
+        </div>
+
+
+        <!--for the banner about the skills-->
+        <div class="flex flex-col gap-2">
+          <span class="text-base text-gray-500 dark:text-slate-300">React</span>
+        <!--parent-->
+        <div class="lg:w-full w-3/4 mx-auto h-1 bg-gray-400 rounded-md">
+          <!--son of the banner-->
+          <div class="w-3/4 h-1 bg-indigo-500 rounded-md"></div>
+       </div>
+      </div>
+
+
+        <!--for the banner about the skills-->
+        <div class="flex flex-col gap-2">
+          <span class="text-base text-gray-500 dark:text-slate-300">TypeScript</span>
+        <!--parent-->
+        <div class="lg:w-full w-3/4 mx-auto h-1 bg-gray-400 rounded-md">
+          <!--son of the banner-->
+          <div class="w-1/2 h-1 bg-indigo-500 rounded-md"></div>
+       </div>
+      </div>
+
+         </div>
+      </div>
+
+    </div>
+
+    <!--services-->
+    <div id='services' class="dark:bg-slate-800" >
+      <div class="container mx-auto flex flex-col gap-3  md:h-screen h-fit mb-2 dark:bg-slate-800">
+       <!--top-->
+       <div class="flex flex-col gap-3 text-center">
+          <span class="uppercase text-lg md:text-2xl text-indigo-700">services</span>
+          <span class="text-base md:text-xl dark:text-slate-200">What I do offer?</span>
+          <p class="w-1/2 mx-auto text-gray-600 text-sm dark:text-slate-300">My approch to website design is to create a website that strengthes your company's brand while ensuring ease of use and simply for your audience</p>
+       </div>
+
+       <!--bottom-->
+       <div class="flex flex-wrap gap-6 mt-8  mx-auto  justify-center ">
+        <!--card-->
+        <div class="flex flex-col gap-2 rounded-md  md:w-1/3 w-3/4  shadow-md dark:shadow-slate-700 px-2 py-1 justify-center top-2">
+          <img class="w-8 h-8" src="./img/icon.png" alt="icon for the items in the card">
+          <span class="text-base md:text-lg dark:text-slate-200">UI/UX Design</span>
+          <p class="text-gray-600 text-sm md:text-base dark:text-slate-300">I specialize in creating interactive websites for indviduals and small businesses</p>
+          <span class="text-indigo-700 cursor-pointer text-sm md:text-base ">Read more</span>
+        </div>
+
+        <!--card-->
+        <div class="flex flex-col gap-2 rounded-md  md:w-1/3 w-3/4  shadow-md dark:shadow-slate-700 px-2 py-1 justify-center top-2">
+          <img class="w-8 h-8" src="./img/icon.png" alt="icon for the items in the card">
+          <span class="text-base md:text-lg dark:text-slate-200">UI/UX Design</span>
+          <p class="text-gray-600 text-sm md:text-base dark:text-slate-300">I specialize in creating interactive websites for indviduals and small businesses</p>
+          <span class="text-indigo-700 cursor-pointer text-sm md:text-base ">Read more</span>
+        </div>
+
+        <!--card-->
+        <div class="flex flex-col gap-2 rounded-md  md:w-1/3 w-3/4  shadow-md dark:shadow-slate-700 px-2 py-1 justify-center top-2">
+          <img class="w-8 h-8" src="./img/icon.png" alt="icon for the items in the card">
+          <span class="text-base md:text-lg dark:text-slate-200">UI/UX Design</span>
+          <p class="text-gray-600 text-sm md:text-base dark:text-slate-300">I specialize in creating interactive websites for indviduals and small businesses</p>
+          <span class="text-indigo-700 cursor-pointer text-sm md:text-base ">Read more</span>
+        </div>
+
+        <!--card-->
+        <div class="flex flex-col gap-2 rounded-md  md:w-1/3 w-3/4  shadow-md dark:shadow-slate-700 px-2 py-1 justify-center top-2">
+          <img class="w-8 h-8" src="./img/icon.png" alt="icon for the items in the card">
+          <span class="text-base md:text-lg dark:text-slate-200">UI/UX Design</span>
+          <p class="text-gray-600 text-sm md:text-base dark:text-slate-300">I specialize in creating interactive websites for indviduals and small businesses</p>
+          <span class="text-indigo-700 cursor-pointer text-sm md:text-base ">Read more</span>
+        </div>
+       </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  <!--portfolio-->
+    <div id='portfolio' class="dark:bg-slate-800" >
+      <div class="container mx-auto flex flex-col gap-3 mt-3 md:mt-0 h-fit dark:bg-slate-800">
+       <!--top-->
+       <div class="flex flex-col gap-3 text-center">
+          <span class="uppercase text-lg md:text-2xl text-indigo-700 ">portfolio</span>
+          <span class="text-base md:text-xl dark:text-slate-200">Works & Projects</span>
+          <p class="w-1/2 mx-auto text-gray-600 text-sm dark:text-slate-300">I help Desginers,small agacies and businesses bring their ideas to life . Powered by Figma . Vs Code and Coffee , I turn your requirments into a well designed website.</p>
+       </div>
+
+       <!--bottom-->
+       <div class="flex flex-wrap gap-6 mt-8 mx-auto  justify-center ">
+        <!--card-->
+        <div class="flex flex-col gap-2 rounded-md  md:w-1/4 w-1/3 h-40  lg:h-52 object-cover  shadow-md dark:shadow-slate-700 px-2 py-1 justify-center cursor-pointer  ">
+          <img class="w-full h-full" src="./img/item.png" alt="icon for the items in the card">
+        </div>
+
+        <!--card-->
+        <div class="flex flex-col gap-2 rounded-md  md:w-1/4 w-1/3 h-40  lg:h-52  object-cover  shadow-md dark:shadow-slate-700 px-2 py-1 justify-center cursor-pointer  ">
+          <img class="w-full h-full" src="./img/item.png" alt="icon for the items in the card">
+        </div>
+
+        <!--card-->
+        <div class="flex flex-col gap-2 rounded-md  md:w-1/4 w-1/3 h-40  lg:h-52  object-cover  shadow-md dark:shadow-slate-700 px-2 py-1 justify-center cursor-pointer  ">
+          <img class="w-full h-full" src="./img/item.png" alt="icon for the items in the card">
+        </div>
+  
+        <!--card-->
+        <div class="flex flex-col gap-2 rounded-md  md:w-1/4 w-1/3 h-40  lg:h-52 object-cover  shadow-md dark:shadow-slate-700 px-2 py-1 justify-center cursor-pointer  ">
+          <img class="w-full h-full" src="./img/item.png" alt="icon for the items in the card">
+        </div>
+
+
+
+       </div>
+
+      </div>
+
+
+    </div>
+
+
+    <!--contact-->
+  
+    <div id='contact' class="dark:bg-slate-800" >
+      <div class="container mx-auto flex flex-col gap-5  h-fit mt-3 md:mt-4 dark:bg-slate-800">
+       <!--top-->
+       <div class="flex flex-col gap-3 text-center">
+          <span class="uppercase text-lg md:text-2xl text-indigo-700">contact</span>
+          <span class="text-base md:text-xl dark:text-slate-200">Have a Question?</span>
+          <p class="w-1/2 mx-auto text-gray-600 text-sm dark:text-slate-300">Do you have an idea ? let's discus it and see what we can do together</p>
+       </div>
+      
+       <!--bottom-->
+       <form class="flex flex-col gap-4 text-center" >
+        <input type="text" placeholder="Name Surname" class="w-1/2 md:w-1/3 ring-1 ring-indigo-300 rounded-md mx-auto px-2 dark:bg-slate-700 dark:ring-0 dark:text-slate-200 dark:focus:outline-none">
+        <input type="text" placeholder="Email" class="w-1/2 md:w-1/3 ring-1 ring-indigo-300 rounded-md mx-auto px-2 dark:bg-slate-700 dark:ring-0 dark:text-slate-200 dark:focus:outline-none">
+        <textarea id="" cols="30" rows="10" placeholder="Message..." class="w-1/2 md:w-1/3 ring-1 ring-indigo-300 rounded-md mx-auto px-2 dark:bg-slate-700 dark:ring-0 dark:text-slate-200 dark:focus:outline-none"></textarea>
+       <button class="bg-indigo-700 md:p-3 p-2 w-fit h-fit mx-auto text-white">submit</button>
+       </form>
+   
+       </div>
+       </div>
+
+
+     <!--nav bar-->
+     <div class="bg-gray-600 w-full h-9 bottom-0 py-2 px-2 sm:px-0 z-10">
+      <div class="container mx-auto flex justify-between ">
+           <!--logo-->
+          <div class="flex gap-1 text-center ">
+             <img class="h-7 w-7" src="./img/logo.png" alt="the logo image">
+             <span class="text-base text-white">PortLand.</span>
+          </div>
+
+           <span class="text-base text-white" >Alaa Aldeen Assi</span>
+    
+
+
+      </div>
+
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+
+</body>
+</html>
